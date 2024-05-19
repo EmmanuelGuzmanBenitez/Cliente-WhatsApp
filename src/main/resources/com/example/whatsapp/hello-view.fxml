@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="center" spacing="10" style="-fx-background-color: #8FEA85;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.whatsapp.HelloController">
+    <children>
+        <Label text="¿Cual es tu nombre?" />
+        <TextField fx:id="nameField" />
+        <Label text="Ingresa la dirección IP." />
+        <TextField fx:id="ipField" />
+        <Label text="Ingresa el puerto" />
+        <TextField fx:id="portField" />
+        <Button onAction="#connect" style="-fx-background-color: #D7E8D5;" text="Comenzar">
+         <effect>
+            <Reflection>
+               <input>
+                  <Blend />
+               </input>
+            </Reflection>
+         </effect></Button>
+    </children>
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+   <effect>
+      <Lighting>
+         <bumpInput>
+            <Shadow />
+         </bumpInput>
+         <light>
+            <Light.Distant />
+         </light>
+      </Lighting>
+   </effect>
+</VBox>
